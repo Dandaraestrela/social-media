@@ -1,3 +1,5 @@
+import { Avatar } from "../Avatar/Avatar";
+import { Comment } from "../Comment/Comment";
 import styles from "./Post.module.css";
 
 export const Post = () => {
@@ -5,11 +7,7 @@ export const Post = () => {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://avatars.githubusercontent.com/u/31369111?v=4"
-            alt="user profile image"
-          />
+          <Avatar src="https://avatars.githubusercontent.com/u/31369111?v=4" />
           <div className={styles.authorInfo}>
             <h4 className={styles.userName}>Dandara Estrela</h4>
             <span className={styles.userJob}>Developer</span>
@@ -22,12 +20,33 @@ export const Post = () => {
       </header>
 
       <div className={styles.content}>
-        Fala galeraa 👋 <br />
-        Acabei de subir mais um projeto no meu portifa. <br />É um projeto que
-        fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare
-        🚀
-        <br /> 👉 jane.design/doctorcare <br />
-        #novoprojeto #nlw #rocketseat
+        <p>
+          Fala galeraa 👋 <br />
+          Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
+          no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀
+        </p>
+        <p>
+          👉<a href="#"> jane.design/doctorcare</a>
+        </p>
+        <p>
+          <a href="#">#novoprojeto </a>
+          <a href="#">#nlw </a>
+          <a href="#">#rocketseat</a>
+        </p>
+      </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu feedback</strong>
+        <textarea placeholder="Deixe um comentário" />
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </article>
   );
