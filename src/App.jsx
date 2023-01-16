@@ -1,6 +1,7 @@
 import { Header } from "./components/Header/Header";
 import { Post } from "./components/Post/Post";
 import { Sidebar } from "./components/Sidebar/Sidebar";
+import { posts } from "./utils/mock";
 
 import styles from "./App.module.css";
 
@@ -12,7 +13,16 @@ function App() {
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
-        <Post />
+        <div>
+          {posts.map((post) => (
+            <Post
+              key={post.id}
+              author={post.author}
+              content={post.content}
+              publishedAt={post.publishedAt}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
