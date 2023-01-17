@@ -1,4 +1,6 @@
-export const posts = [
+import { PostProps } from "../components/Post/Post";
+
+export const posts: PostProps[] = [
   {
     id: 1,
     author: {
