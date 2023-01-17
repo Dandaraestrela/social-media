@@ -3,7 +3,7 @@ export const posts = [
     id: 1,
     author: {
       name: "Dandara Estrela",
-      avatarURL: "https://avatars.githubusercontent.com/u/31369111?v=4",
+      avatarUrl: "https://avatars.githubusercontent.com/u/31369111?v=4",
       role: "Dev Frontend",
     },
     content: [
@@ -21,7 +21,7 @@ export const posts = [
     id: 2,
     author: {
       name: "Diego Fernandes",
-      avatarURL: "https://avatars.githubusercontent.com/u/2254731?v=4",
+      avatarUrl: "https://avatars.githubusercontent.com/u/2254731?v=4",
       role: "CTO Rocketseat",
     },
     content: [
@@ -37,7 +37,7 @@ export const posts = [
   {
     id: 3,
     author: {
-      avatarURL: "https://avatars.githubusercontent.com/u/6643122?v=4",
+      avatarUrl: "https://avatars.githubusercontent.com/u/6643122?v=4",
       name: "Mayk Brito",
       role: "Educator @Rocketseat",
     },
